@@ -975,14 +975,10 @@ pick2(n,i,j)
 
 /**** ordran.c  ***/
 
-	int
-ordran(n,pbuf)
-	int n;
-	double pbuf[];
-{
-	ranvec(n,pbuf);
-	order(n,pbuf);
-	return;
+void ordran(int n, double pbuf[]) {
+  ranvec(n,pbuf);
+  order(n,pbuf);
+  return;
 }
 
 
@@ -1024,18 +1020,15 @@ order(n,pbuf)
 }
 
 
-	int
-ranvec(n,pbuf)
-	int n;
-	double pbuf[];
+void ranvec(int n, double pbuf[])
 {
-	int i;
-	double ran1();
-
-	for(i=0; i<n; i++)
-		pbuf[i] = ran1();
-
-	return;
+  int i;
+  double ran1();
+  
+  for(i=0; i<n; i++)
+    pbuf[i] = ran1();
+  
+  return;
 }
 
 

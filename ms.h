@@ -35,3 +35,6 @@ struct params {
 	};
 	
 
+void ranvec(int, double[]);
+void ordran(int, double[]);
+
